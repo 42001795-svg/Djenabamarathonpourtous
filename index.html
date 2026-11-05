@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Présentation – Marathon pour Tous Paris 2024</title>
+  <meta name="description" content="Portfolio d'une étudiante ayant participé au Marathon pour Tous de Paris 2024.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="index.html">Marathon <span>pour Tous</span> 2024</a>
+    <nav>
+      <ul>
+        <li><a class="lien actif" href="index.html">Présentation</a></li>
+        <li><a class="lien" href="evenement.html">L'événement</a></li>
+        <li><a class="lien" href="programme.html">Programme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="margin-top:0">
+      <div>
+        <span class="etiquette apparait">Paris 2024 · 10 août · Course de nuit</span>
+        <h1 class="apparait" style="--d:1">Bonjour, moi c'est <span class="degrade">Djenaba</span></h1>
+        <p class="chapeau apparait" style="--d:2">
+          Étudiante en Master 2 MELS (Management des événements et des loisirs sportifs) à l'Université Paris Nanterre, j'ai eu la chance
+          de courir <strong>le marathon sur le parcours des marathoniens olympiques</strong>, de nuit, au cœur de Paris.
+          Bienvenue dans le récit de cette aventure.
+        </p>
+        <div class="boutons apparait" style="--d:3">
+          <a class="btn plein" href="evenement.html">Découvrir la course →</a>
+          <a class="btn contour" href="programme.html">Voir le programme</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUI SUIS-JE -->
+    <section>
+      <span class="etiquette">Qui suis-je ?</span>
+      <h2>Étudiante, curieuse… et marathonienne d'un soir</h2>
+      <div class="grille">
+        <article class="carte">
+          <span class="icone">🎓</span>
+          <h3>L'étudiante</h3>
+          <p class="valeur">Djenaba NIAISSA, 22 ans</p>
+          <p>Passionnée par le sport et les défis collectifs. J'avais 20 ans le jour de la course, l'âge minimum pour s'aligner sur le marathon.</p>
+        </article>
+        <article class="carte">
+          <span class="icone">📚</span>
+          <h3>La formation</h3>
+          <p class="valeur">Master 2 MELS – 5<sup>e</sup> année</p>
+          <p>MELS : Management des Événements et des Loisirs Sportifs. Une formation qui prépare à organiser et piloter des événements sportifs, comme celui que j'ai eu la chance de vivre de l'intérieur.</p>
+        </article>
+        <article class="carte">
+          <span class="icone">🏛️</span>
+          <h3>L'université</h3>
+          <p class="valeur">Université Paris Nanterre</p>
+          <p>Mon université est située à Nanterre, dans les Hauts-de-Seine, aux portes de Paris.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BANDEAU -->
+    <div class="defile" aria-hidden="true">
+      <div>
+        <span>Marathon pour Tous</span><b>★</b><span>Paris 2024</span><b>★</b><span>42,195 km</span><b>★</b><span>Course de nuit</span><b>★</b><span>Pour tous</span><b>★</b>
+        <span>Marathon pour Tous</span><b>★</b><span>Paris 2024</span><b>★</b><span>42,195 km</span><b>★</b><span>Course de nuit</span><b>★</b><span>Pour tous</span><b>★</b>
+      </div>
+    </div>
+
+    <!-- CHIFFRES -->
+    <section>
+      <span class="etiquette">En chiffres</span>
+      <h2>Une soirée hors du commun</h2>
+      <div class="chiffres">
+        <div class="chiffre"><div class="nb" style="--cible:40000">&nbsp;</div><small>coureurs au total</small></div>
+        <div class="chiffre"><div class="nb" style="--cible:42">&nbsp;</div><small>km pour le marathon (42,195)</small></div>
+        <div class="chiffre"><div class="nb" style="--cible:21">&nbsp;</div><small>h : heure du départ</small></div>
+        <div class="chiffre"><div class="nb" style="--cible:1">&nbsp;</div><small>seule nuit, le 10 août 2024</small></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="citation">
+        « Une course exceptionnelle dans un cadre sublime, mais un parcours très exigeant. »
+        <small>Djenaba NIAISSA, finisher du Marathon pour Tous Paris 2024</small>
+      </div>
+    </section>
+
+    <div class="suite">
+      <span></span>
+      <a class="btn plein" href="evenement.html">Page suivante : l'événement →</a>
+    </div>
+  </main>
+
+  <footer>
+    Site réalisé par Djenaba NIAISSA · Master 2 MELS · Université Paris Nanterre<br>
+    Marathon pour Tous – Paris 2024
+  </footer>
+
+  <script>
+    // Lueur dorée qui suit la souris sur les cartes
+    document.querySelectorAll('.carte').forEach(function (c) {
+      c.addEventListener('mousemove', function (e) {
+        var r = c.getBoundingClientRect();
+        c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      });
+    });
+  </script>
+</body>
+</html>
